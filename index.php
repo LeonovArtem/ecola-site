@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <link href="css/bootstrap.css" rel="stylesheet">
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+    <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
     <link href="css/template.css" rel="stylesheet">
 </head>
 <body>
