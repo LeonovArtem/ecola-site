@@ -126,37 +126,37 @@
                 <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                     <span class="glyphicon glyphicon-chevron-right"></span>
                 </a>
-      <!--          <div class="col-md-12 carousel-right thumbnail">
-                    <div>
-                        <h4><strong>Мощные светодиодные лампы?</strong></h4>
-                        <p class="text-20"><strong>А зачем?</strong></p>
-                        <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
-                            разными!</p>
-                        <p><strong>Экола предлагает переходники и разветвители. Вместо одной дорогой мощной лампы
-                                - </strong>
-                            простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
-                        </p>
-                    </div>
+                <!--          <div class="col-md-12 carousel-right thumbnail">
+                              <div>
+                                  <h4><strong>Мощные светодиодные лампы?</strong></h4>
+                                  <p class="text-20"><strong>А зачем?</strong></p>
+                                  <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
+                                      разными!</p>
+                                  <p><strong>Экола предлагает переходники и разветвители. Вместо одной дорогой мощной лампы
+                                          - </strong>
+                                      простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
+                                  </p>
+                              </div>
 
-                    <div>
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                    </div>
-                    <div class="row">
+                              <div>
+                                  <ol class="carousel-indicators">
+                                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                  </ol>
+                              </div>
+                              <div class="row">
 
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                            <button type="button" class="btn btn-secondary-outline">Статьи</button>
-                        </div>
+                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                      <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
+                                  </div>
+                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                      <button type="button" class="btn btn-secondary-outline">Статьи</button>
+                                  </div>
 
-                    </div>
+                              </div>
 
-                </div> -->
+                          </div> -->
             </div>
         </div>
     </div>
@@ -205,8 +205,10 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="thumbnail  footer-util">
-                        <p class="text-upper-white">Об утилизации ламп</p>
-                        <a href="#"><img id="arrows-util" data-src="holder.js/300x200" src=img/arrows-util.png alt="..."></a>
+                        <a id="arrows-util" href="#">
+                            <p class="text-upper-white">Об утилизации ламп</p>
+                            <img data-src="holder.js/300x200" src=img/arrows-util.png alt="...">
+                        </a>
                     </div>
                     <div class="thumbnail footer-idea">
                         <h4 class="text-upper-black">Светлые идеи от Ecola</h4>
@@ -256,16 +258,16 @@
 ?>
 <script>
     miniSlide(3, 700);
-    arrowSlide(500);
+    arrowSlide(100);
     function arrowSlide(delay) {
-        $('#arrows-util').on('mouseover',function () {
-            var self=this;
-            var turn=0;
-            var slider=setInterval(function () {
-                $(self).css('-webkit-transform','rotate('+ turn*20 +'deg)');
-                ++turn;
-            },delay);
-            $(self).on('mouseout',function () {
+        var turn = 0;
+        $('#arrows-util').on('mouseover', function () {
+            var img = $('#arrows-util').find('img');
+            var slider = setInterval(function () {
+                $(img).css('-webkit-transform', 'rotate(' + turn * 20 + 'deg)');
+                turn++;
+            }, delay);
+            $(self).on('mouseout', function () {
                 clearTimeout(slider);
             });
         });
@@ -274,15 +276,6 @@
         var nslide = 0;
         var reslide = 0;
         var slider = setInterval(function () {
-            $.ajax({
-                url: window.location.origin + '/img',         // Строка указывающая URL, на который будет отправлен запрос.
-                type: 'POST',           // Устанавливает тип запроса (GET или POST). Значение по умолчанию GET.
-                //data:'',           //	Данные, которые будут переданы на сервер (json,xml)
-                dataType: 'file',   //	Ожидаемый для приема с сервера тип данных.
-                success: function (file_data) {
-                    console.log('ok');
-                }
-            });
             $('#mini-slide').attr('src', 'img/mini-slide-' + ++nslide + '.png');
             if (nslide == 5) {
                 nslide = 0;
@@ -292,9 +285,6 @@
                 clearTimeout(slider);
         }, delay);
     }
-    //test function
-
-
 </script>
 </body>
 </html>

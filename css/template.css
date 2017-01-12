@@ -129,7 +129,9 @@
 .footer-util {
     background-color: #5C5257;
     padding:15px;
-
+}
+.footer-util a:hover{
+    text-decoration: none;
 }
 #arrows-util:hover {
     /*-moz-transform: rotate(15deg); !* Для Firefox *!*/
@@ -142,7 +144,10 @@
 .footer-idea {
     background-color: #FBBF00;
 }
-
+.footer-idea:hover{
+    background-color: #f0d835;
+    cursor: pointer;
+}
 .footer-vault {
     background-color: #5C5257;
     padding-top: 20px;
