@@ -1,3 +1,5 @@
+<?php //ob_start("ob_gzhandler",9);?>
+
 <!doctype html>
 <html lang="ru">
 <head>
@@ -11,26 +13,26 @@
 </head>
 <body>
 <div class="container">
-    <div class="row left-slide">
-        <div class="col-md-3 col-sm-12 col-xs-12 one">
-            Level 1: .col-md-12
-            <div class="row">
-                <div class="col-md-12 col-sm-6 left-slide-top">
-                    <img src="img/left-banner.png">
-                </div>
-                <div class="col-md-12 col-sm-6 left-slide-middle">
-                    <p><strong>Новинка!<br>
-                            Золотистые LED лампы!<br>
-                            (свечи, шары, рефлекторы R50, замена галогенок MR16 GU5.3)
-                        </strong>
-                    </p>
-                </div>
-                <div class="col-md-12 col-sm-6 left-slide-bottom">
-                    <h4>Другие <strong>новости</strong> ecola</h4>
-                </div>
-            </div>
-        </div>
-    </div>
+<!--    <div class="row left-slide">-->
+<!--        <div class="col-md-3 col-sm-12 col-xs-12 one">-->
+<!--            Level 1: .col-md-12-->
+<!--            <div class="row">-->
+<!--                <div class="col-md-12 col-sm-6 left-slide-top">-->
+<!--                    <img src="img/left-banner.png">-->
+<!--                </div>-->
+<!--                <div class="col-md-12 col-sm-6 left-slide-middle">-->
+<!--                    <p><strong>Новинка!<br>-->
+<!--                            Золотистые LED лампы!<br>-->
+<!--                            (свечи, шары, рефлекторы R50, замена галогенок MR16 GU5.3)-->
+<!--                        </strong>-->
+<!--                    </p>-->
+<!--                </div>-->
+<!--                <div class="col-md-12 col-sm-6 left-slide-bottom">-->
+<!--                    <h4>Другие <strong>новости</strong> ecola</h4>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
     <!--Header-->
     <div class="row">
         <div class="col-lg-7 col-md-6 col-sm-4">
@@ -189,16 +191,13 @@
         <div class="col-lg-6 col-md-6 ">
             <div class="row footer-right">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                    <div class="thumbnail wrap-slide footer-catalog">
+                    <div class="thumbnail  footer-catalog">
                         <p><strong>Каталог Ecola 2017</strong></p>
-                        <p class="text-upper-white">
-                            <button type="button" class="btn btn-default"><span
-                                    class="glyphicon glyphicon-eye-open"></span> Посмотреть
-                            </button>
-
+                        <p>
+                            <button type="button" class="btn btn-ecola-white">Посмотреть</button>
                         </p>
-                        <img data-src="holder.js/300x200" src=img/left-banner.png alt="...">
-                        <button type="button" class="btn btn-default"><span
+                        <img data-src="holder.js/300x200" src=img/catalog-2017.jpg alt="...">
+                        <button type="button" class="btn btn-ecola-catalog"><span
                                 class="glyphicon glyphicon-arrow-down"></span> Скачать PDF(16 мб.)
                         </button>
                     </div>

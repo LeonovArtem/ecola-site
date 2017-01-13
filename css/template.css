@@ -4,7 +4,7 @@
     margin-bottom: 0;
 }
 .content {
-    padding: 15px;
+    padding: 5%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -41,7 +41,7 @@
     width: 100%;
     max-width: 334px;
     height: auto;
-    padding: 10px;
+    padding: 10px 0;
 }
 
 .head-text-right {
@@ -70,7 +70,7 @@
     background: #E08C1A;
     color: #0f0f0f;
     background: linear-gradient(to bottom left, #f1da36, #E08C1A);
-    padding: 15px;
+    padding: 5%;
 }
 
 .left-slide-bottom {
@@ -103,7 +103,7 @@
     background-color: #ddd;
     font-weight: 700;
     font-size: 21px;
-    padding: 15px;
+    padding: 10px;
 }
 
 .left-shift {
@@ -120,10 +120,15 @@
     font-size: 18px;
     text-align: center;
 }
+.footer-catalog{
+    padding: 5%;
+}
 
-.footer-catalog {
-    padding: 15px;
+.footer-catalog ,.footer-util ,.footer-idea{
     color: #0f0f0f;
+    background: #ef8316;
+    border-radius: 0;
+    border: none;
 }
 
 .footer-util {
@@ -172,6 +177,32 @@
 
 .menu-list-white a {
     color: #fff;
+}
+.btn-ecola-white {
+    color: #fff;
+    background-color: #f18216;
+    border-color: #fff;
+    border-radius: 0px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.btn-ecola-white:hover {
+    color: #0f0f0f;
+    background-color: #fff;
+    border-color: #0f0f0f;
+}
+.btn-ecola-catalog{
+    text-transform: uppercase;
+    font-weight: 600;
+    border-color: #fff;
+    border-radius: 0px;
+    background-color: #fff;
+}
+.btn-ecola-catalog:hover{
+    color: #5c5257;
+}
+.btn-ecola-catalog .glyphicon {
+    color: #ef8316;
 }
 
 /*Adaptive template*/
