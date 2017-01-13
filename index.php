@@ -12,27 +12,9 @@
     <link href="css/template.css" rel="stylesheet">
 </head>
 <body>
+
+
 <div class="container">
-<!--    <div class="row left-slide">-->
-<!--        <div class="col-md-3 col-sm-12 col-xs-12 one">-->
-<!--            Level 1: .col-md-12-->
-<!--            <div class="row">-->
-<!--                <div class="col-md-12 col-sm-6 left-slide-top">-->
-<!--                    <img src="img/left-banner.png">-->
-<!--                </div>-->
-<!--                <div class="col-md-12 col-sm-6 left-slide-middle">-->
-<!--                    <p><strong>Новинка!<br>-->
-<!--                            Золотистые LED лампы!<br>-->
-<!--                            (свечи, шары, рефлекторы R50, замена галогенок MR16 GU5.3)-->
-<!--                        </strong>-->
-<!--                    </p>-->
-<!--                </div>-->
-<!--                <div class="col-md-12 col-sm-6 left-slide-bottom">-->
-<!--                    <h4>Другие <strong>новости</strong> ecola</h4>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
     <!--Header-->
     <div class="row">
         <div class="col-lg-7 col-md-6 col-sm-4">
@@ -80,7 +62,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">О фирме</a></li>
+                    <li><a href="#"><div>О фирме</div></a></li>
                     <li><a href="#about">Контакты</a></li>
                     <li><a href="#contact">Где купить?</a></li>
                     <li><a href="#contact">Партнерам</a></li>
@@ -91,88 +73,99 @@
     </div>
     <!--Wrapper-->
     <div class="row wrap-slide">
-        <div class="col-lg-3 col-md-3">
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <img data-src="holder.js/300x200" src="img/left-banner.png">
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <p><strong>Новинка!<br>
-                        Золотистые LED лампы!<br>
-                        (свечи, шары, рефлекторы R50, замена галогенок MR16 GU5.3)
-                    </strong>
-                </p>
-            </div>
-            <div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
-                <h4>Другие <strong>новости</strong> ecola</h4>
+        <div class="col-md-3 col-sm-12 col-xs-12">
+            <div class="row left-slide">
+                <div class="col-md-12 left-slide-top">
+                    <div class="banner"><img src="img/left-banner.png"></div>
+                </div>
+                <div class="col-md-12  left-slide-middle">
+                    <p><strong>Новинка!<br>Золотистые LED лампы! (свечи, шары, рефлекторы R50, замена галогенок MR16
+                            GU5.3)</strong></p>
+                </div>
+                <div class="col-md-12  left-slide-bottom">
+                    <h4><a href="@news">Другие <strong>новости</strong> ecola</a></h4>
+                </div>
             </div>
         </div>
-        <div class="col-lg-9 col-md-9">
-            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="col-md-9 col-sm-12 col-xs-12">
+            <div class="row right-slider">
                 <!-- Wrapper for slides -->
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img src="img/slide-1.jpg" alt="...">
-                        <div class="carousel-caption">
-                            <div class="left-carousel">
-                                <img id="mini-slide" src="img/mini-slide-1.png">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="img/slide-1.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <div class="left-carousel">
+                                    <img id="mini-slide" src="img/mini-slide-1.png">
+                                </div>
                             </div>
                         </div>
+                        <div class="item"><img src="img/slide-1.jpg" alt="..."></div>
+                        <div class="item"><img src="img/slide-1.jpg" alt="..."></div>
                     </div>
-                    <div class="item"><img src="img/slide-1.jpg" alt="..."></div>
-                    <div class="item"><img src="img/slide-1.jpg" alt="..."></div>
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+
                 </div>
-                <!-- Controls -->
-                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
-                <!--          <div class="col-md-12 carousel-right thumbnail">
-                              <div>
-                                  <h4><strong>Мощные светодиодные лампы?</strong></h4>
-                                  <p class="text-20"><strong>А зачем?</strong></p>
-                                  <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
-                                      разными!</p>
-                                  <p><strong>Экола предлагает переходники и разветвители. Вместо одной дорогой мощной лампы
-                                          - </strong>
-                                      простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
-                                  </p>
-                              </div>
-
-                              <div>
-                                  <ol class="carousel-indicators">
-                                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                  </ol>
-                              </div>
-                              <div class="row">
-
-                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                                      <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
-                                  </div>
-                                  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                                      <button type="button" class="btn btn-secondary-outline">Статьи</button>
-                                  </div>
-
-                              </div>
-
-                          </div> -->
+                <!--Slider Text-->
+                <!--            <div class="row">-->
+                <!--                <div class="col-md-6 one">-->
+                <!--                    one-->
+                <!--                </div>-->
+                <!--                <div class="col-md-6 two">-->
+                <!--                    <div>-->
+                <!--                        <h4><strong>Мощные светодиодные лампы?</strong></h4>-->
+                <!--                        <p class="text-20"><strong>А зачем?</strong></p>-->
+                <!--                        <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть-->
+                <!--                            разными!</p>-->
+                <!--                        <p><strong>Экола предлагает переходники и разветвители. Вместо одной дорогой мощной лампы-->
+                <!--                                - </strong>-->
+                <!--                            простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>-->
+                <!--                        </p>-->
+                <!--                    </div>-->
+                <!---->
+                <!--                    <div>-->
+                <!--                        <ol class="carousel-indicators">-->
+                <!--                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+                <!--                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
+                <!--                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                <!--                        </ol>-->
+                <!--                    </div>-->
+                <!--                    <div class="row">-->
+                <!---->
+                <!--                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
+                <!--                            <button type="button" class="btn btn-secondary-outline">Узнать больше</button>-->
+                <!--                        </div>-->
+                <!--                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">-->
+                <!--                            <button type="button" class="btn btn-secondary-outline">Статьи</button>-->
+                <!--                        </div>-->
+                <!---->
+                <!--                    </div>-->
+                <!---->
+                <!--                </div>-->
+                <!--            </div>-->
             </div>
         </div>
     </div>
     <!--Footer-->
     <!--Footer-top-->
     <div class="row">
-        <h4 class="text-center"> Подробнее ознакомиться с нашими <strong>
-                светодиодными энергосберегающими</strong> лампами и <strong>светильниками</strong>
-            Вы можете в нашем <strong>каталоге</strong></h4>
+        <div class="col-lg-12">
+            <h4 class="text-center"> Подробнее ознакомиться с нашими <strong>
+                    светодиодными энергосберегающими</strong> лампами и <strong>светильниками</strong>
+                Вы можете в нашем <strong>каталоге</strong></h4>
+        </div>
     </div>
     <div class="row align-items-start ">
         <div class="col-lg-6 col-md-6">
             <div class="row footer-left-top">
-                Светодиодные лампы и светильники Ecola(Экола)
+                Светодиодные лампы и светильники Ecola (Экола)
             </div>
             <div class="footer-left-middle">
                 <p>
@@ -192,14 +185,18 @@
             <div class="row footer-right">
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="thumbnail  footer-catalog">
-                        <p><strong>Каталог Ecola 2017</strong></p>
-                        <p>
+                        <div class="text-footer-head"><strong>Каталог Ecola 2017</strong></div>
+                        <div>
                             <button type="button" class="btn btn-ecola-white">Посмотреть</button>
-                        </p>
-                        <img data-src="holder.js/300x200" src=img/catalog-2017.jpg alt="...">
-                        <button type="button" class="btn btn-ecola-catalog"><span
-                                class="glyphicon glyphicon-arrow-down"></span> Скачать PDF(16 мб.)
-                        </button>
+                        </div>
+                        <div>
+                            <img src=img/catalog-2017.jpg alt="...">
+                        </div>
+                        <div class="catalog-load">
+                            <button type="button" class="btn btn-ecola-catalog"><span
+                                    class="glyphicon glyphicon-arrow-down"></span> Скачать PDF(16 мб.)
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
@@ -244,7 +241,7 @@
                     <li><a href="" target="_blank">Статьи</a></li>
                 </ul>
             </div>
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-lg-6 col-md-6 col-sm-6 live-lighter">
                 <img src="img/live-lighter.png" alt="...">
             </div>
         </div>
