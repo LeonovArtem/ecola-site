@@ -23,7 +23,7 @@
         <div class="col-lg-5 col-md-6 col-sm-8">
             <div class="row">
                 <div class="col-lg-12 head-text-right">
-                    <h3 class="text-danger"><strong>Светодиодные лампы и светильники</strong></h3>
+                    <h3><strong>Светодиодные лампы и светильники</strong></h3>
                 </div>
             </div>
             <div class="row">
@@ -62,7 +62,9 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#"><div>О фирме</div></a></li>
+                    <li><a href="#">
+                            <div>О фирме</div>
+                        </a></li>
                     <li><a href="#about">Контакты</a></li>
                     <li><a href="#contact">Где купить?</a></li>
                     <li><a href="#contact">Партнерам</a></li>
@@ -114,45 +116,37 @@
 
                 </div>
                 <!--Slider Text-->
-                <!--            <div class="row">-->
-                <!--                <div class="col-md-6 one">-->
-                <!--                    one-->
-                <!--                </div>-->
-                <!--                <div class="col-md-6 two">-->
-                <!--                    <div>-->
-                <!--                        <h4><strong>Мощные светодиодные лампы?</strong></h4>-->
-                <!--                        <p class="text-20"><strong>А зачем?</strong></p>-->
-                <!--                        <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть-->
-                <!--                            разными!</p>-->
-                <!--                        <p><strong>Экола предлагает переходники и разветвители. Вместо одной дорогой мощной лампы-->
-                <!--                                - </strong>-->
-                <!--                            простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>-->
-                <!--                        </p>-->
-                <!--                    </div>-->
-                <!---->
-                <!--                    <div>-->
-                <!--                        <ol class="carousel-indicators">-->
-                <!--                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
-                <!--                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>-->
-                <!--                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
-                <!--                        </ol>-->
-                <!--                    </div>-->
-                <!--                    <div class="row">-->
-                <!---->
-                <!--                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">-->
-                <!--                            <button type="button" class="btn btn-secondary-outline">Узнать больше</button>-->
-                <!--                        </div>-->
-                <!--                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">-->
-                <!--                            <button type="button" class="btn btn-secondary-outline">Статьи</button>-->
-                <!--                        </div>-->
-                <!---->
-                <!--                    </div>-->
-                <!---->
-                <!--                </div>-->
-                <!--            </div>-->
+                <div class="text-slider-right">
+                    <div>
+                        <div class="text-slider-header">Мощные светодиодные лампы?<br>
+                            А зачем?
+                        </div>
+                        <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
+                            разными!</p>
+                        <p><strong>ЭКОЛА предлагает переходники и разветвители. Вместо одной дорогой мощной лампы - </strong>
+                            простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
+                        </p>
+                    </div>
+                    <div class="carousel-list">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                            <button type="button" class="btn btn-secondary-outline">Статьи</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+
     <!--Footer-->
     <!--Footer-top-->
     <div class="row">
@@ -249,12 +243,36 @@
     </div>
 
 </div>
-<?php
-
-?>
+<!--Document Scroll arrow-->
+<a id="go-to-top" href="#" class="btn btn-primary btn-lg go-to-top" role="button" title="Незамедлительно вверх">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+</a>
 <script>
-    miniSlide(3, 700);
-    arrowSlide(100);
+    $(document).ready(function () {
+        //Document Scroll arrow
+        $(window).scroll(function () {
+            // Высота проявления кнопки
+            if ($(this).scrollTop() > 100) {
+                $('#go-to-top').fadeIn();
+            } else {
+                $('#go-to-top').fadeOut();
+            }
+        });
+
+        $('#go-to-top').click(function () {
+            $('body,html').animate({
+                scrollTop: 0
+                // Скорость подъема
+            }, 0);
+            return false;
+        });
+        $('.carousel').carousel({
+            interval: 6000
+        });
+        miniSlide(3, 700);
+        arrowSlide(100);
+
+    });
     function arrowSlide(delay) {
         var turn = 0;
         $('#arrows-util').on('mouseover', function () {
