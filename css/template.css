@@ -1,6 +1,7 @@
 /*Body Content*/
 body {
     background: radial-gradient(#f8bc82, #f18216);
+    background-image:url("/img/fon.jpg");
     padding-top: 30px;
 }
 .row {
@@ -18,9 +19,9 @@ body {
 }
 
 .container {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
-
+box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 }
+
 
 .text-22 {
     font-size: 22px;
@@ -54,8 +55,11 @@ body {
 
 .head-text-right {
     text-align: right;
-
 }
+.head-text-right strong{
+    text-align: left;
+}
+
 .head-text-right strong{
     color: #0f0f0f;
 }
@@ -109,8 +113,8 @@ body {
     height: 16px;
 }
 .carousel-indicators .active{
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
     margin: 0;
     background-color: #ef8316;
 }
@@ -150,6 +154,7 @@ body {
 
 .left-slide-bottom a {
     font-size: 19px;
+    text-transform: uppercase;
     color: #0f0f0f;
 
 }
@@ -356,7 +361,7 @@ body {
 /*Adaptive template*/
 @media (min-width: 1200px) {
     .left-slide-bottom {
-        padding: 12px;
+        padding: 13px;
     }
 
     .left-slide-middle {
@@ -368,7 +373,7 @@ body {
     }
 
     .footer-idea {
-        padding: 36px 50px;
+        padding: 37px 50px;
     }
 
     .text-upper-white {
@@ -420,7 +425,7 @@ body {
     }
 
     .footer-idea {
-        padding: 17px;
+        padding: 19px;
     }
 }
 
@@ -437,6 +442,9 @@ body {
     }
     .banner {
         display: none;
+    }
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+        top: 30%;
     }
     .text-slider-right{
         position: relative;

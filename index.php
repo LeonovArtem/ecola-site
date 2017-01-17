@@ -1,19 +1,15 @@
-<?php //ob_start("ob_gzhandler",9);?>
-
 <!doctype html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
     <title>Document</title>
-    <!-- Latest compiled and minified JavaScript -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/template.css" rel="stylesheet">
 </head>
 <body>
-
-
 <div class="container">
     <!--Header-->
     <div class="row">
@@ -29,7 +25,6 @@
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6 ">
                     <!--City-->
-
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="row head-text-right">
@@ -64,7 +59,8 @@
                 <ul class="nav navbar-nav">
                     <li><a href="#">
                             <div>О фирме</div>
-                        </a></li>
+                        </a>
+                    </li>
                     <li><a href="#about">Контакты</a></li>
                     <li><a href="#contact">Где купить?</a></li>
                     <li><a href="#contact">Партнерам</a></li>
@@ -81,8 +77,9 @@
                     <div class="banner"><img src="img/left-banner.png"></div>
                 </div>
                 <div class="col-md-12  left-slide-middle">
-                    <p><strong>Новинка!<br>Золотистые LED лампы! (свечи, шары, рефлекторы R50, замена галогенок MR16
-                            GU5.3)</strong></p>
+                    <p><strong>Новинка!</strong><br>Золотистые LED лампы! (свечи, шары, рефлекторы R50, замена галогенок
+                        MR16
+                        GU5.3)</p>
                 </div>
                 <div class="col-md-12  left-slide-bottom">
                     <h4><a href="@news">Другие <strong>новости</strong> ecola</a></h4>
@@ -92,7 +89,7 @@
         <div class="col-md-9 col-sm-12 col-xs-12">
             <div class="row right-slider">
                 <!-- Wrapper for slides -->
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="13000">
                     <!-- Wrapper for slides -->
                     <div class="carousel-inner">
                         <div class="item active">
@@ -113,9 +110,7 @@
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
-
-
-                <!--Slider Text-->
+                    <!--Slider Text-->
                     <div class="text-slider-right">
                         <div>
                             <div class="text-slider-header">Мощные светодиодные лампы?<br>
@@ -123,7 +118,8 @@
                             </div>
                             <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
                                 разными!</p>
-                            <p><strong>ЭКОЛА предлагает переходники и разветвители. Вместо одной дорогой мощной лампы - </strong>
+                            <p><strong>ЭКОЛА предлагает переходники и разветвители. Вместо одной дорогой мощной лампы
+                                    - </strong>
                                 простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
                             </p>
                         </div>
@@ -147,9 +143,7 @@
             </div>
         </div>
     </div>
-
     <!--Footer-->
-    <!--Footer-top-->
     <div class="row">
         <div class="col-lg-12">
             <h4 class="text-center"> Подробнее ознакомиться с нашими <strong>
@@ -250,29 +244,11 @@
 </a>
 <script>
     $(document).ready(function () {
-        //Document Scroll arrow
-        $(window).scroll(function () {
-            // Высота проявления кнопки
-            if ($(this).scrollTop() > 100) {
-                $('#go-to-top').fadeIn();
-            } else {
-                $('#go-to-top').fadeOut();
-            }
-        });
-
-        $('#go-to-top').click(function () {
-            $('body,html').animate({
-                scrollTop: 0
-                // Скорость подъема
-            }, 0);
-            return false;
-        });
         $('.carousel').carousel({
-            interval: 6000
+            interval: 20000
         });
         miniSlide(3, 700);
         arrowSlide(100);
-
     });
     function arrowSlide(delay) {
         var turn = 0;
@@ -300,8 +276,22 @@
                 clearTimeout(slider);
         }, delay);
     }
+    //Document Scroll arrow
+    $(window).scroll(function () {
+        // Высота проявления кнопки
+        if ($(this).scrollTop() > 100) {
+            $('#go-to-top').fadeIn();
+        } else {
+            $('#go-to-top').fadeOut();
+        }
+    });
+    $('#go-to-top').click(function () {
+        $('body,html').animate({
+            scrollTop: 0
+            // Скорость подъема
+        }, 0);
+        return false;
+    });
 </script>
 </body>
 </html>
-
-
