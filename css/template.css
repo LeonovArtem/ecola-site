@@ -1,4 +1,11 @@
 /*Body Content*/
+body {
+    background: radial-gradient(#f8bc82, #f18216);
+    padding-top: 30px;
+}
+.row {
+    background-color: #fff;
+}
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
@@ -47,8 +54,25 @@
 
 .head-text-right {
     text-align: right;
-}
 
+}
+.head-text-right strong{
+    color: #0f0f0f;
+}
+.head-text-right a{
+    color: #0f0f0f;
+}
+    /*Navigation*/
+.navbar-inverse .navbar-brand {
+    color: #ffffff;
+}
+.navbar-inverse .navbar-nav>li>a {
+    color: #ffffff;
+}
+.navbar-inverse {
+    background-color: #5c5257;
+    border-color: #5c5257;
+}
 /*Slider*/
 .text-slider-header {
     font-size: 18px;
@@ -57,19 +81,16 @@
 
 .text-slider-right {
     position: absolute;
-    width: 300px;
-    top: 15px;
-    bottom: 15px;
+    width: 315px;
+    top: 20px;
+    bottom: 20px;
     right: 15px;
-    background-color: #c73838;
+    background-color: #fff;
     padding: 10px;
     color: #0f0f0f;
-
 }
-
 .carousel-list {
     width: 100%;
-
 }
 
 .carousel-indicators {
@@ -82,13 +103,17 @@
     margin-left: 0;
     text-align: center;
 }
-
-/*.carousel-indicators .active{*/
-    /*width: 14px;*/
-    /*height: 14px;*/
-    /*margin: 0;*/
-    /*background-color: #ef8316;*/
-/*}*/
+.carousel-indicators li {
+    background-color: #ddd;
+    width: 16px;
+    height: 16px;
+}
+.carousel-indicators .active{
+    width: 16px;
+    height: 16px;
+    margin: 0;
+    background-color: #ef8316;
+}
 
 .wrap-slide {
     background: #f18216;
@@ -302,14 +327,15 @@
     border-radius: 3px;
 }
 
+
 .btn-primary {
-    background-color: #ef8316;
-    border-color: #c16b15;
+    background-color: #5c5257;
+    border-color: #000;
 }
 
 .btn-primary:hover {
-    background-color: #2b2a29;
-    border-color: #000;
+    background-color: #fbbf00;
+    border-color: #c16b15;
 }
 
 .btn-primary:active:hover,
@@ -325,6 +351,7 @@
     background-color: #000;
     border-color: #2b2a29;
 }
+
 
 /*Adaptive template*/
 @media (min-width: 1200px) {
@@ -356,12 +383,21 @@
 }
 
 @media (max-width: 1200px) {
+    .phone, .mail {
+        font-size: 14px;
+    }
     .footer-idea {
         padding: 21px 21px;;
     }
 
     .left-slide-bottom {
-        padding: 19px;
+        padding: 10px;
+    }
+    .text-slider-right{
+        width: 350px;
+        top: 10px;
+        bottom: 10px;
+        padding: 10px;
     }
 
 }
@@ -389,8 +425,27 @@
 }
 
 @media (max-width: 768px) {
+    body {
+        padding-top: 0px;
+    }
+    #logo{
+        max-width: 250px;
+    }
+    .btn-primary {
+        background-color: #ef8316;
+        border-color: #ef8316;
+    }
     .banner {
         display: none;
+    }
+    .text-slider-right{
+        position: relative;
+        width: 100%;
+        top: 0;
+        bottom: 0;
+        padding: 15px;
+        right: 0;
+        border-bottom:1px solid #9d9d9d;
     }
 
     .head-text-right {

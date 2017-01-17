@@ -33,14 +33,14 @@
                 </div>
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="row head-text-right">
-                        <div class="col-lg-12">
-                            <strong>Телефон:(495)981-06-15</strong>
+                        <div class="col-lg-12 phone">
+                            <strong>Телефон:</strong>(495)981-06-15
                         </div>
-                        <div class="col-lg-12">
-                            <strong>Факс:(495)981-06-15</strong>
+                        <div class="col-lg-12 phone">
+                            <strong>Факс:</strong>(495)981-06-15
                         </div>
-                        <div class="col-lg-12">
-                            <strong>Email:</strong><a href="mailto:#"><strong>info@ecola.ru</strong></a>
+                        <div class="col-lg-12 mail">
+                            <strong>Email:</strong><a href="mailto:#">info@ecola.ru</a>
                         </div>
                     </div>
                 </div>
@@ -114,32 +114,33 @@
                         <span class="glyphicon glyphicon-chevron-right"></span>
                     </a>
 
-                </div>
+
                 <!--Slider Text-->
-                <div class="text-slider-right">
-                    <div>
-                        <div class="text-slider-header">Мощные светодиодные лампы?<br>
-                            А зачем?
+                    <div class="text-slider-right">
+                        <div>
+                            <div class="text-slider-header">Мощные светодиодные лампы?<br>
+                                А зачем?
+                            </div>
+                            <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
+                                разными!</p>
+                            <p><strong>ЭКОЛА предлагает переходники и разветвители. Вместо одной дорогой мощной лампы - </strong>
+                                простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
+                            </p>
                         </div>
-                        <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
-                            разными!</p>
-                        <p><strong>ЭКОЛА предлагает переходники и разветвители. Вместо одной дорогой мощной лампы - </strong>
-                            простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
-                        </p>
-                    </div>
-                    <div class="carousel-list">
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                        </ol>
-                    </div>
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                            <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
+                        <div class="carousel-list">
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                            </ol>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                            <button type="button" class="btn btn-secondary-outline">Статьи</button>
+                        <div class="btn-ecola-group">
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
+                                <button type="button" class="btn btn-secondary-outline">Статьи</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -217,7 +218,7 @@
             офисных, производственных и других типах помещений, а также для подсветки
             архитектурных объектов различного назначения.
         </div>
-        <div class="row col-lg-6 col-md-6">
+        <div class="col-lg-6 col-md-6">
             <div class="col-lg-3 col-md-3 col-sm-3">
                 <ul class="menu-list-white">
                     <li><a href="" target="_blank">Главная</a></li>
