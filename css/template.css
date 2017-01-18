@@ -7,10 +7,6 @@ body {
 .row {
     background-color: #fff;
 }
-.navbar {
-    border-radius: 0;
-    margin-bottom: 0;
-}
 
 .content {
     padding: 5%;
@@ -67,6 +63,10 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
     color: #0f0f0f;
 }
     /*Navigation*/
+.navbar {
+    border-radius: 0;
+    margin-bottom: 0;
+}
 .navbar-inverse .navbar-brand {
     color: #ffffff;
 }
@@ -74,8 +74,24 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
     color: #ffffff;
 }
 .navbar-inverse {
-    background-color: #5c5257;
-    border-color: #5c5257;
+    background-color: #ef8316;
+    border-color: #ef8316;
+    border: none;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+    background-color: #fbbf00;
+}
+.navbar-inverse .navbar-toggle{
+    border-color: #fff;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #ffffff;
+}
+.navbar-collapse a:hover {
+    background: linear-gradient(to bottom, #ffcc00, #ff9000);;
+}
+.navbar-header a:hover {
+    background: linear-gradient(to bottom, #ffcc00, #ff9000);;
 }
 /*Slider*/
 .text-slider-header {
@@ -109,8 +125,10 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 }
 .carousel-indicators li {
     background-color: #ddd;
-    width: 16px;
-    height: 16px;
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    border: 0;
 }
 .carousel-indicators .active{
     width: 18px;
@@ -178,6 +196,9 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
     top: 5%;
     bottom: 5%;
     z-index: 9999999;
+}
+.right-slider-bottom {
+    background-color: transparent;
 }
 
 /*Footer*/
@@ -273,6 +294,11 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 .live-lighter {
     text-align: center;
 }
+.live-lighter img{
+    width: 100%;
+    max-width: 226px;
+    height: auto;
+}
 
 .menu-list-white {
     -webkit-padding-start: 0px;
@@ -285,6 +311,9 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 
 .menu-list-white a {
     color: #fff;
+}
+.btn {
+    border-radius: 0;
 }
 
 .btn-ecola-white {
@@ -440,11 +469,18 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
         background-color: #ef8316;
         border-color: #ef8316;
     }
+    .navbar-header a:hover {
+        background: #ff9000;
+    }
     .banner {
         display: none;
     }
     .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
-        top: 30%;
+        top: 100%;
+        display: none;
+    }
+    .wrap-slide {
+        background: #fff;
     }
     .text-slider-right{
         position: relative;
@@ -474,6 +510,9 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 
     .footer-util {
         padding: 15px;
+    }
+    h3 {
+        font-size: 20px;
     }
 
     h4 {

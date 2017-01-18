@@ -57,10 +57,7 @@
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li><a href="#">
-                            <div>О фирме</div>
-                        </a>
-                    </li>
+                    <li><a href="#"><span>О фирме</span></a></li>
                     <li><a href="#about">Контакты</a></li>
                     <li><a href="#contact">Где купить?</a></li>
                     <li><a href="#contact">Партнерам</a></li>
@@ -130,7 +127,7 @@
                                 <li data-target="#carousel-example-generic" data-slide-to="2"></li>
                             </ol>
                         </div>
-                        <div class="btn-ecola-group">
+                        <div class="row right-slider-bottom">
                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
                                 <button type="button" class="btn btn-secondary-outline">Узнать больше</button>
                             </div>
@@ -239,7 +236,7 @@
 
 </div>
 <!--Document Scroll arrow-->
-<a id="go-to-top" href="#" class="btn btn-primary btn-lg go-to-top" role="button" title="Незамедлительно вверх">
+<a id="go-to-top" href="#" class="btn btn-primary btn-lg go-to-top" role="button" title="Вверх">
     <span class="glyphicon glyphicon-chevron-up"></span>
 </a>
 <script>
