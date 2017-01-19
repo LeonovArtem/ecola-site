@@ -253,7 +253,7 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 }
 
 .footer-util {
-    background-color: #d1841d;
+    background-color: #ef8316;
     padding: 15px;
 }
 
@@ -529,4 +529,6 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
     }
 }
 
-
+.test{
+    background: radial-gradient(#FCE67B, #F88040);
+}
