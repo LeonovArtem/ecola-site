@@ -145,7 +145,7 @@
         <div class="col-lg-12">
             <h4 class="text-center"> Подробнее ознакомиться с нашими <strong>
                     светодиодными энергосберегающими</strong> лампами и <strong>светильниками</strong>
-                Вы можете в нашем <strong>каталоге</strong></h4>
+                Вы можете в нашем <a href="/catalogue33.html"><strong>каталоге</strong></a></h4>
         </div>
     </div>
     <div class="row align-items-start ">
@@ -188,8 +188,8 @@
                 <div class="col-lg-6 col-md-6 col-sm-6">
                     <div class="thumbnail  footer-util">
                         <a id="arrows-util" href="#">
-                            <p class="text-upper-white">Об утилизации ламп</p>
-                            <img data-src="holder.js/300x200" src=img/arrows-util.png alt="...">
+                            <p class="text-upper-white">Обучающий фильм </p>
+                            <img data-src="holder.js/300x200" src=img/disk-ecola.png alt="...">
                         </a>
                     </div>
                     <div class="thumbnail footer-idea">
@@ -245,7 +245,7 @@
             interval: 20000
         });
         miniSlide(3, 700);
-        arrowSlide(100);
+        arrowSlide(50);
     });
     function arrowSlide(delay) {
         var turn = 0;

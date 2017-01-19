@@ -253,7 +253,7 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 }
 
 .footer-util {
-    background-color: #5C5257;
+    background-color: #d1841d;
     padding: 15px;
 }
 
@@ -279,7 +279,7 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
 }
 
 .footer-vault {
-    background-color: #5C5257;
+    background-color: #ef8316;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
@@ -402,7 +402,7 @@ box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
     }
 
     .footer-idea {
-        padding: 37px 50px;
+        padding: 14px 0px;
     }
 
     .text-upper-white {
