@@ -1,47 +1,19 @@
 /*Body Content*/
-body {
-    background: radial-gradient(#f8bc82, #f18216);
-    background-image:url("/img/fon.jpg");
-    padding-top: 30px;
-}
-.row {
-    background-color: #fff;
-}
-
-.content {
-    padding: 5%;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.container {
-box-shadow: 0 10px 35px rgba(0, 0, 0, 0.6);
-}
 
 
-.text-22 {
-    font-size: 22px;
-}
 
-.text-20 {
-    font-size: 22px;
-}
 
-.text-upper-white {
-    color: #fff;
-    text-transform: uppercase;
-}
-
-.text-upper-black {
-    color: #000;
-    text-transform: uppercase;
-}
 
 /*Header*/
-.phone, .mail {
-    font-size: 18px;
+.subheader{
+    margin-top: 12px;
+    font-size: 12px;
+    color: #e67e22;
 }
-
+.templatemo-top-bar {
+    min-height: 40px;
+    background-color: #eeeeee;
+}
 #logo {
     width: 100%;
     max-width: 334px;
