@@ -11,11 +11,10 @@ body, html {
 }
 
 body {
-    background-color: #eee;
-    font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
-    font-size: 12px;
 
-    font-weight: 300;
+    font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
     font-style: normal;
     -webkit-font-smoothing: antialiased; /* Fix for webkit rendering */
     -webkit-text-size-adjust: 100%;
@@ -24,8 +23,6 @@ body {
 h1, h2, h3, h4, h5, h6, span, p {
     font-family: 'Open Sans', Arial, Helvetice Neue, sans-serif;
 }
-
-
 
 #phone, #email {
     font-size: 20px;
@@ -42,6 +39,7 @@ h1, h2, h3, h4, h5, h6, span, p {
 .templatemo-top-bar {
     min-height: 50px;
     background-color: #ff7600;
+    border-bottom: 2px solid #d35400;
 }
 
 .templatemo-top-menu {
@@ -126,8 +124,9 @@ h1, h2, h3, h4, h5, h6, span, p {
 
 /* ------ Welcome & Slogna ------ */
 .templatemo-welcome {
-    border-bottom: 1px solid #cccccc;
-    /* min-height: 230px; */
+    background-color: #f6f6f6;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #eee;
 }
 
 .templatemo-slogan {
@@ -433,9 +432,13 @@ h1, h2, h3, h4, h5, h6, span, p {
 
 .footer_bottom_content {
     margin: auto;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
     font-size: 14px;
-    color: #333333;
+    color: #2b2a29;
+    background: #fce67b;
+    text-align: center;
+    /* margin: 15px; */
+    padding: 10px;
 }
 
 .social-icon-fb {
@@ -701,7 +704,7 @@ ul.templatemo-project-gallery li a img:hover {
 /*My-style*/
 
 /*Navigation*/
-.menu-last a:after{
+.menu-last a:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -712,11 +715,13 @@ ul.templatemo-project-gallery li a img:hover {
     background: #ff7600;
     /*background: radial-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);*/
 }
-.menu-last a:after:hover{
+
+.menu-last a:after:hover {
     background: #0f0f0f !important
     z-index: -1;
 }
-.menu-fist a:after{
+
+.menu-fist a:after {
     content: '';
     width: 100%;
     height: 100%;
@@ -727,14 +732,17 @@ ul.templatemo-project-gallery li a img:hover {
     background: #ff7600;
     /*background: radial-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);*/
 }
-.menu-fist a:after:hover{
+
+.menu-fist a:after:hover {
     background: #0f0f0f !important
     z-index: -1;
 }
-.left-deg-menu{
+
+.left-deg-menu {
 
 }
-.right-deg-menu{
+
+.right-deg-menu {
     padding-right: 25px;
 }
 
@@ -743,13 +751,13 @@ ul.templatemo-project-gallery li a img:hover {
 }
 
 .right-deg-menu li {
-    display: inline-block; /* Строчно-блочные элементы */
-    background: #ff7600; /* Цвет фона */
-    margin-right: 1px; /* Расстояние между пунктами меню */
-    -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
-    -moz-transform: skewX(-30deg); /* Для Firefox */
-    -o-transform: skewX(-30deg); /* Для Opera */
-    -ms-transform: skewX(-30deg); /* Для IE */
+    display: inline-block; /* ÃÂ¡Ã‘â€šÃ‘â‚¬ÃÂ¾Ã‘â€¡ÃÂ½ÃÂ¾-ÃÂ±ÃÂ»ÃÂ¾Ã‘â€¡ÃÂ½Ã‘â€¹ÃÂµ Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€šÃ‘â€¹ */
+    background: #ff7600; /* ÃÂ¦ÃÂ²ÃÂµÃ‘â€š Ã‘â€žÃÂ¾ÃÂ½ÃÂ° */
+    margin-right: 1px; /* ÃÂ ÃÂ°Ã‘ÂÃ‘ÂÃ‘â€šÃÂ¾Ã‘ÂÃÂ½ÃÂ¸ÃÂµ ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ’ ÃÂ¿Ã‘Æ’ÃÂ½ÃÂºÃ‘â€šÃÂ°ÃÂ¼ÃÂ¸ ÃÂ¼ÃÂµÃÂ½Ã‘Å½ */
+    -webkit-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â Safari ÃÂ¸ Chrome */
+    -moz-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â Firefox */
+    -o-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â Opera */
+    -ms-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â IE */
     transform: skewX(-30deg); /* CSS3 */
 }
 
@@ -759,31 +767,33 @@ ul.templatemo-project-gallery li a img:hover {
 }
 
 .right-deg-menu a {
-    color: #fff; /* Цвет ссылок */
-    display: block; /* Блочный элемент */
-    padding: 5px 15px; /* Поля вокруг текста */
-    text-decoration: none; /* Убираем подчёркивание */
-    -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
-    -moz-transform: skewX(30deg); /* Для Firefox */
-    -o-transform: skewX(30deg); /* Для Opera */
-    -ms-transform: skewX(30deg); /* Для IE */
+    color: #fff; /* ÃÂ¦ÃÂ²ÃÂµÃ‘â€š Ã‘ÂÃ‘ÂÃ‘â€¹ÃÂ»ÃÂ¾ÃÂº */
+    display: block; /* Ãâ€˜ÃÂ»ÃÂ¾Ã‘â€¡ÃÂ½Ã‘â€¹ÃÂ¹ Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€š */
+    padding: 5px 15px; /* ÃÅ¸ÃÂ¾ÃÂ»Ã‘Â ÃÂ²ÃÂ¾ÃÂºÃ‘â‚¬Ã‘Æ’ÃÂ³ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ° */
+    text-decoration: none; /* ÃÂ£ÃÂ±ÃÂ¸Ã‘â‚¬ÃÂ°ÃÂµÃÂ¼ ÃÂ¿ÃÂ¾ÃÂ´Ã‘â€¡Ã‘â€˜Ã‘â‚¬ÃÂºÃÂ¸ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ */
+    -webkit-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â Safari ÃÂ¸ Chrome */
+    -moz-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â Firefox */
+    -o-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â Opera */
+    -ms-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â IE */
     transform: skewX(30deg); /* CSS3 */
 }
+
 /*left-deg*/
 
-.left-deg-menu > li > a:before{
+.left-deg-menu > li > a:before {
     border-top: 70px solid transparent;
     border-right: 30px solid #000;
     left: -30px;
 }
+
 .left-deg-menu li {
-    display: inline-block; /* Строчно-блочные элементы */
-    background: #ff7600; /* Цвет фона */
-    margin-right: 1px; /* Расстояние между пунктами меню */
-    -webkit-transform: skewX(30deg); /* Для Safari и Chrome */
-    -moz-transform: skewX(30deg); /* Для Firefox */
-    -o-transform: skewX(30deg); /* Для Opera */
-    -ms-transform: skewX(30deg); /* Для IE */
+    display: inline-block; /* ÃÂ¡Ã‘â€šÃ‘â‚¬ÃÂ¾Ã‘â€¡ÃÂ½ÃÂ¾-ÃÂ±ÃÂ»ÃÂ¾Ã‘â€¡ÃÂ½Ã‘â€¹ÃÂµ Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€šÃ‘â€¹ */
+    background: #ff7600; /* ÃÂ¦ÃÂ²ÃÂµÃ‘â€š Ã‘â€žÃÂ¾ÃÂ½ÃÂ° */
+    margin-right: 1px; /* ÃÂ ÃÂ°Ã‘ÂÃ‘ÂÃ‘â€šÃÂ¾Ã‘ÂÃÂ½ÃÂ¸ÃÂµ ÃÂ¼ÃÂµÃÂ¶ÃÂ´Ã‘Æ’ ÃÂ¿Ã‘Æ’ÃÂ½ÃÂºÃ‘â€šÃÂ°ÃÂ¼ÃÂ¸ ÃÂ¼ÃÂµÃÂ½Ã‘Å½ */
+    -webkit-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â Safari ÃÂ¸ Chrome */
+    -moz-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â Firefox */
+    -o-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â Opera */
+    -ms-transform: skewX(30deg); /* Ãâ€ÃÂ»Ã‘Â IE */
     transform: skewX(30deg); /* CSS3 */
 }
 
@@ -793,21 +803,21 @@ ul.templatemo-project-gallery li a img:hover {
 }
 
 .left-deg-menu a {
-    color: #fff; /* Цвет ссылок */
-    display: block; /* Блочный элемент */
-    padding: 5px 15px; /* Поля вокруг текста */
-    text-decoration: none; /* Убираем подчёркивание */
-    -webkit-transform: skewX(-30deg); /* Для Safari и Chrome */
-    -moz-transform: skewX(-30deg); /* Для Firefox */
-    -o-transform: skewX(-30deg); /* Для Opera */
-    -ms-transform: skewX(-30deg); /* Для IE */
+    color: #fff; /* ÃÂ¦ÃÂ²ÃÂµÃ‘â€š Ã‘ÂÃ‘ÂÃ‘â€¹ÃÂ»ÃÂ¾ÃÂº */
+    display: block; /* Ãâ€˜ÃÂ»ÃÂ¾Ã‘â€¡ÃÂ½Ã‘â€¹ÃÂ¹ Ã‘ÂÃÂ»ÃÂµÃÂ¼ÃÂµÃÂ½Ã‘â€š */
+    padding: 5px 15px; /* ÃÅ¸ÃÂ¾ÃÂ»Ã‘Â ÃÂ²ÃÂ¾ÃÂºÃ‘â‚¬Ã‘Æ’ÃÂ³ Ã‘â€šÃÂµÃÂºÃ‘ÂÃ‘â€šÃÂ° */
+    text-decoration: none; /* ÃÂ£ÃÂ±ÃÂ¸Ã‘â‚¬ÃÂ°ÃÂµÃÂ¼ ÃÂ¿ÃÂ¾ÃÂ´Ã‘â€¡Ã‘â€˜Ã‘â‚¬ÃÂºÃÂ¸ÃÂ²ÃÂ°ÃÂ½ÃÂ¸ÃÂµ */
+    -webkit-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â Safari ÃÂ¸ Chrome */
+    -moz-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â Firefox */
+    -o-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â Opera */
+    -ms-transform: skewX(-30deg); /* Ãâ€ÃÂ»Ã‘Â IE */
     transform: skewX(-30deg); /* CSS3 */
 }
 
 /*My-old-style*/
 
 /*Slider*/
-.bottom-slide{
+.bottom-slide {
     position: absolute;
     bottom: 0px;
     width: 35%;
@@ -818,9 +828,9 @@ ul.templatemo-project-gallery li a img:hover {
 }
 
 .left-carousel {
-    width: 75%;
+    width: 78%;
     text-align: right;
-    padding-bottom: 50px;
+    padding-bottom: 78px;
 }
 
 .left-carousel img {
@@ -828,24 +838,177 @@ ul.templatemo-project-gallery li a img:hover {
     height: auto;
 }
 
-.text-slider-header {
-    font-size: 20px;
-    font-weight: 600;
+.text-slider-left {
+    position: absolute;
+    bottom: 20px;
+
 }
-.text-slider-right {
+
+.text-slider-left > * {
+    color: #fff;
+}
+
+.news-text {
+    background-color: #2b2a29;
+    padding: 10px;
+}
+
+.news-btn {
+    background-color: #ff7600;
+    padding: 20px;
+}
+
+.news-btn > div {
+    transform: skewX(-30deg);
+}
+
+.news-text > div {
+    transform: skewX(-30deg);
+}
+
+.news-btn, .news-text {
+    transform: skewX(30deg);
+}
+
+/*ÃÂ¢Ã‘â‚¬ÃÂ°ÃÂ¿ÃÂµÃ‘â€ ÃÂ¸Ã‘Â*/
+#trapezoid {
+    border-bottom: 100px solid #2b2a29;
+    border-right: 50px solid transparent;
+    height: 0;
+    width: 300px;
+    color: #fff;
     font-size: 14px;
+    font-weight: 500;
+}
+
+#trapezoid:hover {
+    border-bottom: 100px solid #fed700;
+    color: #2b2a29;
+    cursor: pointer;
+}
+
+#trapezoid > span {
+    position: absolute;
+    top: 10px;
+    bottom: 50px;
+    left: 10px;
+    right: 50px;
+}
+
+#trapezoid-2 {
+    border-bottom: 40px solid #ff7600;
+    border-right: 25px solid transparent;
+    height: 0;
+    width: 326px;
+    color: #fff;
+    padding: 2px;
+    font-size: 18px;
+}
+
+#trapezoid-2 a {
+    color: #fff;
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-weight: 500;
+    text-decoration: none;
+
+}
+
+#trapezoid-2:hover {
+    border-bottom: 40px solid #fff;
+    color: #2b2a29;
+    cursor: pointer;
+}
+
+#trapezoid-2 a:hover {
+    color: #2b2a29;
+}
+
+/*Ãâ€ºÃÂµÃÂ½Ã‘â€šÃÂ°*/
+.lenta {
+    position: relative;
+    width: 90%;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 6px 20px 6px 70px;
+    margin: 30px 10px 10px -71px;
+    color: #555;
+    background-color: #999;
+    text-shadow: 0px 1px 2px #bbb;
+    -webkit-box-shadow: 0px 2px 4px #888;
+    -moz-box-shadow: 0px 2px 4px #888;
+    box-shadow: 0px 2px 4px #888;
+}
+
+.lenta:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 0px;
+    top: 100%;
+    border-width: 5px 10px;
+    border-style: solid;
+    border-color: #666 #666 transparent transparent;
+}
+
+.lenta:before {
+    content: ' ';
+    position: absolute;
+    width: 30px;
+    height: 0;
+    left: -30px;
+    top: 12px;
+    border-width: 20px 10px;
+    border-style: solid;
+    border-color: #999 #999 #999 transparent;
+}
+
+/*lenta*/
+#page {
+    width: 500px;
+    padding: 50px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #333;
+}
+
+h2.flag:before {
+    width: 0px;
+    /* height: 28px; */
+    left: auto;
+    right: -10px;
+    top: 0px;
+    border-color: #ff7600 transparent #ff7600 transparent;
+
+}
+
+/**/
+.right-slider-bottom {
+    padding-top: 8px;
+
+}
+
+.text-slider-right {
+    font-size: 16px;
     font-weight: 500;
     position: absolute;
     width: 350px;
     top: 20px;
-    bottom: 20px;
+    bottom: 12px;
     right: 0px;
     background-color: #fff;
     padding: 20px;
     color: #0f0f0f;
     border: 2px solid #ff7600;
-    border-radius: 20px;
+    border-radius: 13px;
 }
+
+.text-slider-right p {
+    padding: 10px 20px 0 20px;
+}
+
 .carousel-list {
     width: 100%;
 }
@@ -859,21 +1022,23 @@ ul.templatemo-project-gallery li a img:hover {
     padding-left: 0;
     margin-left: 0;
     text-align: center;
+    padding-top: 5px;
 }
+
 .carousel-indicators li {
     background-color: #ddd;
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     border-radius: 18px;
     border: 0;
 }
-.carousel-indicators .active{
+
+.carousel-indicators .active {
     width: 18px;
     height: 18px;
     margin: 0;
     background-color: #ef8316;
 }
-
 
 @media (min-width: 1200px) {
     .left-slide-bottom {
@@ -907,6 +1072,7 @@ ul.templatemo-project-gallery li a img:hover {
     .phone, .mail {
         font-size: 14px;
     }
+
     .footer-idea {
         padding: 21px 21px;;
     }
@@ -914,7 +1080,8 @@ ul.templatemo-project-gallery li a img:hover {
     .left-slide-bottom {
         padding: 10px;
     }
-    .text-slider-right{
+
+    .text-slider-right {
         width: 350px;
         top: 10px;
         bottom: 10px;
@@ -949,34 +1116,41 @@ ul.templatemo-project-gallery li a img:hover {
     body {
         padding-top: 0px;
     }
-    #logo{
+
+    #logo {
         max-width: 250px;
     }
+
     .btn-primary {
         background-color: #ef8316;
         border-color: #ef8316;
     }
+
     .navbar-header a:hover {
         background: #ff9000;
     }
+
     .banner {
         display: none;
     }
-    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+
+    .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev {
         top: 100%;
         display: none;
     }
+
     .wrap-slide {
         background: #fff;
     }
-    .text-slider-right{
+
+    .text-slider-right {
         position: relative;
         width: 100%;
         top: 0;
         bottom: 0;
         padding: 15px;
         right: 0;
-        border-bottom:1px solid #9d9d9d;
+        border-bottom: 1px solid #9d9d9d;
     }
 
     .head-text-right {
@@ -998,6 +1172,7 @@ ul.templatemo-project-gallery li a img:hover {
     .footer-util {
         padding: 15px;
     }
+
     h3 {
         font-size: 20px;
     }
@@ -1016,4 +1191,140 @@ ul.templatemo-project-gallery li a img:hover {
     }
 }
 
+/*  Newsletter Area */
 
+.newsletter-area:before {
+    content: "";
+    height: 48px;
+    position: absolute;
+    right: 0;
+    top: 10px;
+    width: 43%;
+}
+
+.newsletter-area:after {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid;
+    border-width: 24px 10px;
+    content: "";
+    height: 5px;
+    position: absolute;
+    right: 43%;
+    top: 10px;
+    width: 0;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #e67e22 #e67e22;
+}
+
+.newsletter-area {
+    background: #FCE67B none repeat scroll 0 0;
+    color: #ffffff;
+    position: relative;
+    margin-top: 40px;
+}
+
+.newsletter-area:before {
+    height: 148px;
+    left: 0;
+    right: auto;
+    top: -20px;
+    width: 44%;
+    background: #e67e22;
+}
+
+.newsletter-area:after {
+    border-width: 74.5px 40px;
+    left: 44%;
+    right: auto;
+    top: -20px;
+}
+
+.newsletter-content h2, .newsletter-content h3 {
+    font-family: raleway;
+    font-weight: 700;
+    font-size: 30px
+}
+
+.newsletter-content > h3 {
+    margin-bottom: 2px;
+    font-size: 24px
+}
+
+.subscribe-form input {
+    color: #696969;
+    height: 100%;
+    padding-left: 15px;
+    width: 100%;
+    border: 0;
+}
+
+.subscribe-form > button {
+    border: 2px solid #2b2a29;
+    /* font-family: raleway; */
+    font-weight: 700;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+    width: 34%;
+    color: #fff;
+    background-color: #2b2a29;
+}
+
+.subscribe-form > button:hover {
+    background: #FFF;
+    border: 2px solid #86bc42;
+}
+
+.newsletter-form {
+    overflow: hidden;
+    padding: 36px 0;
+}
+
+.subscribe-form {
+    float: right;
+    height: 56px;
+    position: relative;
+    width: 525px;
+}
+
+.subscribe-form:before {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #fff #fff transparent transparent;
+    -o-border-image: none;
+    border-image: none;
+    border-style: solid;
+    border-width: 28px 15px;
+    content: "";
+    height: 5px;
+    left: -30px;
+    position: absolute;
+    top: 0;
+    width: 0;
+}
+
+.newsletter-content {
+    padding-top: 26px;
+    z-index: 9;
+    position: relative;
+}
+
+/*Footer*/
+#footer-line > a {
+    color: #000;
+
+}
+
+#footer-line {
+    font-weight: 600;
+}
+}
