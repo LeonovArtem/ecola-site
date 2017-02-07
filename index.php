@@ -1,323 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-    <title>Urbanic Free Website Template</title>
+    <title>Светодиодные и энергосберегающие лампы и светильники Ecola (Экола)</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Google Web Font Embed -->
     <link
         href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
         rel='stylesheet' type='text/css'>
-
-    <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css'>
-
     <!-- Custom styles for this template -->
     <link href="js/colorbox/colorbox.css" rel='stylesheet' type='text/css'>
     <link href="css/templatemo_style.css" rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-
-    <![endif]-->
-
+    <link href="css/template.css" rel='stylesheet' type='text/css'>
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <style type="text/css">
-
-
-        h1 {
-            font-size: 1.6em;
-            font-weight: normal;
-            margin: 0;
-        }
-
-        h2 {
-            position: relative;
-            font-size: 16px;
-            padding: 13px 0 10px 10px;
-            margin: -42px 13px 5px -26px;
-            color: #fff;
-            background-color: #ff7600;
-            -webkit-box-shadow: 0px 2px 4px #888;
-            -moz-box-shadow: 0px 2px 4px #888;
-            box-shadow: 0px 2px 4px #888;
-        }
-
-        h2:before, h2:after {
-            content: ' ';
-            position: absolute;
-            width: 0;
-            height: 0;
-        }
-
-        h2:before {
-            width: 30px;
-            left: -30px;
-            top: 12px;
-            border-width: 20px 10px;
-            border-style: solid;
-
-        }
-
-        h2:after {
-            left: 0px;
-            top: 100%;
-            border-width: 5px 10px;
-            border-style: solid;
-            border-color: #d35400 #d35400 transparent transparent;
-        }
-
-        /*  1.Header    */
-        .header {
-            background-color: #eee;
-        }
-
-        /*  4. About Area
-/*----------------------------------------*/
-        .about-area {
-            background: rgba(0, 0, 0, 0) url("img/banner/1.jpg") no-repeat scroll center top;
-            color: #ffffff;
-            margin-top: 140px;
-            padding-bottom: 54px;
-            position: relative;
-        }
-
-        .about-area:before {
-            height: 110px;
-            left: 0;
-            right: auto;
-            top: -20px;
-            width: 49.2%;
-        }
-
-        .about-area:after {
-            border-width: 55px 30px;
-            left: 49.2%;
-            top: -20px;
-            right: auto
-        }
-
-        .about-area h3 {
-            font-size: 30px;
-            margin-bottom: 79px;
-            padding-top: 22px;
-            z-index: 9;
-            position: relative;
-        }
-
-        .about-area p {
-            font-family: "Raleway";
-            line-height: 26px;
-            margin-bottom: 42px;
-        }
-
-        /*----------------------------------------*/
-        /*  5. Course Area
-        /*----------------------------------------*/
-        .course-area .section-title-wrapper {
-            margin-bottom: 122px;
-        }
-
-        .single-item-image a {
-            display: inline-block;
-        }
-
-        .single-item-image {
-            overflow: hidden;
-            position: relative;
-            text-align: center;
-            top: -35px;
-        }
-
-        .overlay-effect a {
-            position: relative
-        }
-
-        .overlay-effect a:before {
-            background: rgba(45, 62, 80, 0.2) none repeat scroll 0 0;
-            bottom: 0;
-            content: "";
-            height: 100%;
-            left: 0;
-            opacity: 0;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-            filter: alpha(opacity=0);
-            position: absolute;
-            right: 0;
-            width: 100%;
-        }
-
-        .single-item:hover .overlay-effect a:before {
-            opacity: 1;
-            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-            filter: alpha(opacity=100);
-        }
-
-        .single-item {
-            background: #f6f6f6 none repeat scroll 0 0;
-            border: 1px solid #ff7600;
-            border-radius: 13px;
-            padding: 0 35px;
-            -webkit-transition: all 0.3s ease 0s;
-            transition: all 0.3s ease 0s;
-            margin-bottom: 20px;
-            margin-top: 70px;
-        }
-
-        .single-item:hover {
-            background: #ffffff none repeat scroll 0 0;
-            box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
-        }
-
-        .single-item-text h4 {
-            font-size: 20px;
-            padding-top: 7px;
-            text-align: center;
-        }
-
-        .single-item-text h4 a, .single-item-text h4 {
-            color: #2d3e50;
-        }
-
-        .single-item-text-info span {
-            color: #696969;
-            font-family: "montserratregular";
-            margin-right: 11px;
-        }
-
-        .single-item-text-info span span {
-            color: #2d3e50;
-        }
-
-        .single-item-text > p {
-            color: #222222;
-        }
-
-        .single-item-content {
-            margin-bottom: 44px;
-            overflow: hidden;
-            padding-top: 21px;
-        }
-
-        .single-item-text-info {
-            margin-bottom: 18px;
-            padding-top: 5px;
-        }
-
-        .single-item-comment-view span {
-            color: #696969;
-            display: inline-block;
-            font-family: "montserratregular";
-            font-size: 12px;
-            margin-right: 17px;
-        }
-
-        .single-item-comment-view span:last-child {
-            margin-right: 0
-        }
-
-        .single-item-comment-view > span i {
-            font-size: 14px;
-            margin-right: 8px;
-        }
-
-        .single-item-comment-view, .single-item-rating {
-            display: inline-block;
-        }
-
-        .single-item-rating {
-            color: #f3c30b;
-            float: right;
-            font-size: 16px;
-        }
-
-        .single-item-rating i {
-            margin-left: 3px;
-        }
-
-        .single-item .button-default {
-            padding: 8px 33px;
-        }
-
-        .button-bottom {
-            margin-bottom: -19.5px;
-            text-align: center;
-        }
-
-        .single-item:hover .button-default {
-            background: #2d3e50 none repeat scroll 0 0;
-        }
-
-        .button-large.button-default {
-            box-shadow: 0 2px 20px rgba(34, 30, 31, 0.2);
-            font-size: 18px;
-            margin-top: 83px;
-            padding: 12px 18px;
-            text-transform: capitalize;
-        }
-
-        .shortcode .button-large.button-default {
-            margin-top: 40px
-        }
-
-        .button-default.button-large:hover {
-            background: #2d3e50 none repeat scroll 0 0;
-        }
-
-        .button-large.button-default i {
-            font-size: 28px;
-            line-height: 20px;
-            margin-left: 11px;
-            position: relative;
-            top: 4px;
-        }
-
-        /*----------------------------------------*/
-        /*Footer*/
-        .footer-vault {
-            background-color: #ff7600;;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            color: #fff;
-            border-top: 1px solid #d35400;
-        }
-
-        .footer-company {
-            margin-bottom: 10px;
-            padding-bottom: 10px;
-
-        }
-
-        .live-lighter {
-            text-align: center;
-        }
-
-        .live-lighter img {
-            width: 100%;
-            max-width: 226px;
-            height: auto;
-        }
-
-        .menu-list-white {
-            -webkit-padding-start: 0px;
-            list-style-type: none;
-        }
-
-        .menu-list-white li {
-            padding-bottom: 5px;
-        }
-
-        .menu-list-white a {
-            color: #fff;
-        }
-
-    </style>
-
 </head>
-
 <body>
 <div class="header">
     <div class="templatemo-top-bar" id="templatemo-top">
@@ -436,9 +135,11 @@
 
     <div class="row">
         <div class="col-md-4 col-sm-6">
-            <div class="single-item">
-                <div class="single-item-image overlay-effect">
-                    <a href="#"><img src="img/disk-ecola.png" alt="" style="width: 200px;"></a>
+            <div class="single-item" id="film-disk">
+                <div class="single-item-image">
+                    <a href="#">
+                        <img src="img/disk-ecola.png" alt="" style="width: 200px;">
+                    </a>
                 </div>
                 <div class="single-item-text">
                     <h4><a href="#">Обучающий фильм</a></h4>
@@ -454,8 +155,10 @@
         </div>
         <div class="col-md-4 col-sm-6">
             <div class="single-item">
-                <div class="single-item-image overlay-effect">
-                    <a href="#"><img src="img/catalog.png" alt="" style="width: 293px;"></a>
+                <div class="single-item-image">
+                    <a href="#">
+                        <img id="catalog-img" src="img/catalog.png" alt="">
+                    </a>
                 </div>
                 <div class="single-item-text">
                     <h4><a href="#">Каталог Ecola 2017</a></h4>
@@ -471,9 +174,11 @@
             </div>
         </div>
         <div class="col-md-4 hidden-sm">
-            <div class="single-item">
-                <div class="single-item-image overlay-effect">
-                    <a href="#"><img src="img/lamps-light.png" alt="" width="160px"></a>
+            <div class="single-item" id="idea">
+                <div class="single-item-image">
+                    <a href="#">
+                        <img src="img/lamps-light.png" alt="" width="160px">
+                    </a>
                 </div>
                 <div class="single-item-text">
                     <h4><a href="#">Светлые идеи от Ecola</a></h4>
@@ -503,7 +208,7 @@
                 <div class="newsletter-form angle">
                     <form action="#" id="mc-form" class="mc-form footer-newsletter fix" novalidate="true">
                         <div class="subscribe-form">
-                            <input id="mc-email" type="email" name="EMAIL" placeholder="email...">
+                            <input id="mc-email" type="email" name="EMAIL" placeholder="email рассылка...">
                             <button id="mc-submit" type="submit">Подписаться</button>
                         </div>
                     </form>
@@ -562,6 +267,33 @@
         <span id="footer-line">Copyright © 2006 <a href="#">Ecola</a></span>
     </div>
 </div>
+<script>
+    arrowSlide(10);
+    lamsLight();
 
+    function arrowSlide(delaySlide) {
+        var turn = 0;
+        $('#film-disk').on('mouseover', function () {
+            var img = $('#film-disk').find('img');
+            var slider = setInterval(function () {
+                $(img).css('-webkit-transform', 'rotate(' + turn * 10 + 'deg)');
+                turn++;
+            }, delaySlide);
+            $(self).on('mouseout', function () {
+                clearTimeout(slider);
+            });
+        });
+    }
+    function lamsLight() {
+        var img = $('#idea').find('img');
+
+        $('#idea').on('mouseover', function () {
+            img.attr('src', 'img/lamps.png');
+        });
+        $(self).on('mouseout', function () {
+            img.attr('src', 'img/lamps-light.png');
+        });
+    }
+</script>
 </body>
 </html>
