@@ -157,7 +157,7 @@
         }
 
         .single-item {
-            background: #f6f6f6 none repeat scroll 0 0;
+            background: #eeeeee none repeat scroll 0 0;
             border: 1px solid #ff7600;
             border-radius: 13px;
             padding: 0 35px;
@@ -288,6 +288,8 @@
         .footer-company {
             margin-bottom: 10px;
             padding-bottom: 10px;
+            color: #2b2a29;
+            font-weight: 600;
 
         }
 
@@ -308,6 +310,7 @@
 
         .menu-list-white li {
             padding-bottom: 5px;
+            font-weight: 600;
         }
 
         .menu-list-white a {
@@ -436,9 +439,11 @@
 
     <div class="row">
         <div class="col-md-4 col-sm-6">
-            <div class="single-item">
-                <div class="single-item-image overlay-effect">
-                    <a href="#"><img src="img/disk-ecola.png" alt="" style="width: 200px;"></a>
+            <div class="single-item" id="film-disk">
+                <div class="single-item-image">
+                    <a href="#">
+                        <img src="img/disk-ecola.png" alt="" style="width: 200px;">
+                    </a>
                 </div>
                 <div class="single-item-text">
                     <h4><a href="#">Обучающий фильм</a></h4>
@@ -454,8 +459,10 @@
         </div>
         <div class="col-md-4 col-sm-6">
             <div class="single-item">
-                <div class="single-item-image overlay-effect">
-                    <a href="#"><img src="img/catalog.png" alt="" style="width: 293px;"></a>
+                <div class="single-item-image">
+                    <a href="#">
+                        <img id="catalog-img" src="img/catalog.png" alt="">
+                    </a>
                 </div>
                 <div class="single-item-text">
                     <h4><a href="#">Каталог Ecola 2017</a></h4>
@@ -471,9 +478,11 @@
             </div>
         </div>
         <div class="col-md-4 hidden-sm">
-            <div class="single-item">
-                <div class="single-item-image overlay-effect">
-                    <a href="#"><img src="img/lamps-light.png" alt="" width="160px"></a>
+            <div class="single-item" id="idea">
+                <div class="single-item-image">
+                    <a href="#">
+                        <img src="img/lamps-light.png" alt="" width="160px">
+                    </a>
                 </div>
                 <div class="single-item-text">
                     <h4><a href="#">Светлые идеи от Ecola</a></h4>
@@ -503,7 +512,7 @@
                 <div class="newsletter-form angle">
                     <form action="#" id="mc-form" class="mc-form footer-newsletter fix" novalidate="true">
                         <div class="subscribe-form">
-                            <input id="mc-email" type="email" name="EMAIL" placeholder="email...">
+                            <input id="mc-email" type="email" name="EMAIL" placeholder="email рассылка...">
                             <button id="mc-submit" type="submit">Подписаться</button>
                         </div>
                     </form>
@@ -562,6 +571,33 @@
         <span id="footer-line">Copyright © 2006 <a href="#">Ecola</a></span>
     </div>
 </div>
+<script>
+    arrowSlide(10);
+    lamsLight();
 
+    function arrowSlide(delaySlide) {
+        var turn = 0;
+        $('#film-disk').on('mouseover', function () {
+            var img = $('#film-disk').find('img');
+            var slider = setInterval(function () {
+                $(img).css('-webkit-transform', 'rotate(' + turn * 10 + 'deg)');
+                turn++;
+            }, delaySlide);
+            $(self).on('mouseout', function () {
+                clearTimeout(slider);
+            });
+        });
+    }
+    function lamsLight() {
+        var img = $('#idea').find('img');
+
+        $('#idea').on('mouseover', function () {
+            img.attr('src', 'img/lamps.png');
+        });
+        $(self).on('mouseout', function () {
+            img.attr('src', 'img/lamps-light.png');
+        });
+    }
+</script>
 </body>
 </html>

@@ -1,0 +1,24 @@
+{
+  "name": "ecola_test",
+  "homepage": "https://github.com/LeonovArtem/ecola-site",
+  "authors": [
+    "aleonov <arttemleonov@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1",
+    "bootstrap": "3.3.7",
+    "bootstrap-validator": "^0.11.9",
+    "underscore": "^1.8.3"
+  },
+  "private": true
+}

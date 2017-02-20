@@ -1,0 +1,230 @@
+/*form-authorization*/
+body {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.form-signin {
+    max-width: 330px;
+    padding: 15px;
+    margin: 0 auto;
+}
+
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+    margin-bottom: 10px;
+}
+
+.form-signin .checkbox {
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.form-signin .form-control {
+    position: relative;
+    height: auto;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 10px;
+    font-size: 16px;
+}
+
+.form-signin .form-control:focus {
+    z-index: 2;
+}
+
+.form-signin input[type="email"] {
+    margin-bottom: -1px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+    margin-bottom: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+/*form-authorization-end*/
+
+.btn-orange {
+    background-color: #ff7600;
+    border-bottom: 2px solid #d35400;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color: #ffffff;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+
+.btn-orange:hover, .btn-orange:focus, .btn-orange:active, .btn-orange.active, .open .dropdown-toggle.btn-orange {
+    background-color: #d35400;
+    color: #ffffff;
+}
+/*Блок для удаления*/
+@font-face {
+    font-family: 'PT Sans Ruble';
+    src: url(fonts/pt-sans-ruble-400.woff) format('woff');
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: 'PT Sans Ruble';
+    src: url(fonts/pt-sans-ruble-700.woff) format('woff');
+    font-style: normal;
+    font-weight: 700
+}
+.ruble {
+    font-family: 'PT Sans Ruble';
+    text-transform: lowercase;
+    color: #000;
+    font-weight: 700;
+}
+.panel-info>.panel-heading {
+    color: #ff7600;
+    background-color: #f5f5f5;
+    border-color: #f5f5f5;
+}
+
+
+table {
+    font-size: 16px;
+
+}
+.table-bordered>thead>tr>th:last-child{
+    padding-left: 32px;
+}
+
+th:first-child, td:first-child {
+    text-align: center;
+}
+
+td:first-child,td:last-child{
+    background: #f5f5f5;
+}
+
+.store-th {
+    width: 30%;
+    min-width: 200px;
+}
+
+.store-hidden{
+    cursor: pointer;
+}
+.store-hidden .all-store{
+    display: none;
+    width: 100%;
+    min-width: 210px;
+}
+
+.all-store:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+.circule {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 100%;
+    margin: 0 10px 0 0;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+
+}
+
+.store-Color-1 {
+    background-color: #FCE67B;
+}
+
+.store-Color-2 {
+    background-color: #dd6a0e;
+}
+
+.store-Color-3 {
+    background-color: #75c05d;
+}
+/*Cart*/
+#blockbody{
+    width: 800px;
+    height: auto;
+    margin: 50px auto;
+}
+#block-content{
+    width: 600px;
+    height: auto;
+}
+
+#listing{
+    margin-top: -10px;
+}
+#listing li{
+    float: left;
+    margin-left: 10px;
+    width: auto;
+    height: 250px;
+}
+#listing p.add-tovar{
+    background: url(/images/add-cart-norm.png) no-repeat;
+    display: inline-block;
+    margin: 0;
+    width: 48px;
+    height: 25px;
+    cursor: pointer;
+}
+#listing p.add-tovar:hover{
+    background: url(/images/add-cart-hover.png) no-repeat;
+}
+#listing p.add-tovar:active{
+    background: url(/images/add-cart-active.png) no-repeat;
+}
+#listing p.price-tovar{
+    float: left;
+    margin-top: 4px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font: 17px sans-serif;
+}
+.fixblock{
+    height: 200px;
+    padding-top: 10px;
+}
+.messagecart{
+    border: 1px solid black;
+    padding: 3px;
+    font: 13px sans-serif;
+    display: none;
+    position: absolute;
+    background-color: white;
+}
+.number > span {
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 16px;
+}
+.cart {
+    width: 100%;
+}
+.shopping_list{
+    width: 100%;
+}
+.all-sum{
+    float:right;
+    font-size: 18px;
+}
+.all-sum  > div {
+    display: inline-block;
+}
+#all-sum-price{
+    font-weight: 600;
+}
+
+/*Cart_END*/
+
+
