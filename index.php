@@ -70,57 +70,10 @@
     <div class="container">
         <!-- Carousel -->
         <!-- Wrapper for slides -->
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="13000">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="img/slide-1.jpg" alt="..." style="border-radius: 13px 13px 0px 0px">
-                    <div class="carousel-caption">
-                        <div class="left-carousel">
-                            <img id="mini-slide" src="img/mini-slide-5.png">
-                        </div>
-                    </div>
-                </div>
-                <div class="item"><img src="img/slide-1.jpg" alt="..."></div>
-                <div class="item"><img src="img/slide-1.jpg" alt="..."></div>
-            </div>
-            <div class="text-slider-left">
-                <div id='trapezoid'><span><strong>Новинка!</strong><br>Золотистые LED лампы! <br>(свечи, шары, рефлекторы R50, замена галогенок MR16 GU5.3)</span>
-                </div>
-                <div id="trapezoid-2">
-                    <a href="@news">Другие <strong>новости</strong> Ecola</a>
-                </div>
-
-
-            </div>
-            <div class="text-slider-right">
-                <div class="row">
-                    <h2 class="flag">Мощные светодиодные лампы? <span id="text-reload">А зачем</span>?</h2>
-                    <p>Пора отойти от стереотипа, что бытовые и промышленные источники света должны быть
-                        разными!</p>
-                    <p><strong>ЭКОЛА предлагает переходники и разветвители. Вместо одной дорогой мощной лампы
-                            - </strong>
-                        простые и доступные варианты установки <strong>нескольких массовых ламп.</strong>
-                    </p>
-
-                    <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
-                    </ol>
-                </div>
-                <div class="row right-slider-bottom">
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-                        <button type="button" class="btn btn-orange">Узнать больше</button>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 text-right">
-                        <button type="button" class="btn btn-orange">Статьи</button>
-                    </div>
-                </div>
-            </div>
-        </div>
+        <? require_once 'module/slider/template.php' ?>
     </div>
 </div>
+<div class="wrapper">
 <div class="templatemo-welcome" id="templatemo-welcome">
     <div class="container">
         <div class="templatemo-slogan text-center">
@@ -195,63 +148,66 @@
 
     </div>
 </div>
-
-<div class="newsletter-area">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-5 col-sm-5">
-                <div class="newsletter-content">
-                    <img src="img/live-lighter.png">
-                </div>
-            </div>
-            <div class="col-md-7 col-sm-7">
-                <div class="newsletter-form angle">
-                    <form action="#" id="mc-form" class="mc-form footer-newsletter fix" novalidate="true">
-                        <div class="subscribe-form">
-                            <input id="mc-email" type="email" name="EMAIL" placeholder="email рассылка...">
-                            <button id="mc-submit" type="submit">Подписаться</button>
-                        </div>
-                    </form>
-                    <!-- mailchimp-alerts Start -->
-                    <div class="mailchimp-alerts text-centre fix pull-right">
-                        <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
-                        <div class="mailchimp-success"></div><!-- mailchimp-success end -->
-                        <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+</div>
+<div class="footer">
+    <div class="newsletter-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-5 col-sm-5">
+                    <div class="newsletter-content">
+                        <img src="img/live-lighter.png">
                     </div>
-                    <!-- mailchimp-alerts end -->
+                </div>
+                <div class="col-md-7 col-sm-7">
+                    <div class="newsletter-form angle">
+                        <form action="#" id="mc-form" class="mc-form footer-newsletter fix" novalidate="true">
+                            <div class="subscribe-form">
+                                <input id="mc-email" type="email" name="EMAIL" placeholder="email рассылка...">
+                                <button id="mc-submit" type="submit">Подписаться</button>
+                            </div>
+                        </form>
+                        <!-- mailchimp-alerts Start -->
+                        <div class="mailchimp-alerts text-centre fix pull-right">
+                            <div class="mailchimp-submitting"></div><!-- mailchimp-submitting end -->
+                            <div class="mailchimp-success"></div><!-- mailchimp-success end -->
+                            <div class="mailchimp-error"></div><!-- mailchimp-error end -->
+                        </div>
+                        <!-- mailchimp-alerts end -->
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
-<div class="footer-vault">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 col-md-6 footer-company">
-                Экола предлагает широкий ассортимент продукции
-                для создания современного экономичного освещения:<br>
-                энергосберегающие светодиодные лампы, светильники и прожекторы.<br>
-                Изделия предназначены для использования в жилых домах и квартирах,
-                офисных, производственных и других типах помещений, а также для подсветки
-                архитектурных объектов различного назначения.
-            </div>
-            <div class="col-lg-6 col-md-6">
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <ul class="menu-list-white">
-                        <li><a href="" target="_blank">Главная</a></li>
-                        <li><a href="" target="_blank">О фирме</a></li>
-                        <li><a href="" target="_blank">Контакты</a></li>
-                        <li><a href="" target="_blank">Где купить?</a></li>
-                        <li><a href="" target="_blank">Партнерам</a></li>
-                    </ul>
+    <div class="footer-vault">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 footer-company">
+                    Экола предлагает широкий ассортимент продукции
+                    для создания современного экономичного освещения:<br>
+                    энергосберегающие светодиодные лампы, светильники и прожекторы.<br>
+                    Изделия предназначены для использования в жилых домах и квартирах,
+                    офисных, производственных и других типах помещений, а также для подсветки
+                    архитектурных объектов различного назначения.
                 </div>
-                <div class="col-lg-6 col-md-6 col-sm-6">
-                    <ul class="menu-list-white">
-                        <li><a href="" target="_blank">Каталог продукции</a></li>
-                        <li><a href="" target="_blank">Новости</a></li>
-                        <li><a href="" target="_blank">Об утилизации ламп</a></li>
-                        <li><a href="" target="_blank">Статьи</a></li>
-                    </ul>
+                <div class="col-lg-6 col-md-6">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <ul class="menu-list-white">
+                            <li><a href="" target="_blank">Главная</a></li>
+                            <li><a href="" target="_blank">О фирме</a></li>
+                            <li><a href="" target="_blank">Контакты</a></li>
+                            <li><a href="" target="_blank">Где купить?</a></li>
+                            <li><a href="" target="_blank">Партнерам</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <ul class="menu-list-white">
+                            <li><a href="" target="_blank">Каталог продукции</a></li>
+                            <li><a href="" target="_blank">Новости</a></li>
+                            <li><a href="" target="_blank">Об утилизации ламп</a></li>
+                            <li><a href="" target="_blank">Статьи</a></li>
+                        </ul>
+                    </div>
+
                 </div>
 
             </div>
@@ -259,12 +215,10 @@
         </div>
 
     </div>
-
-</div>
-
-<div class="footer_bottom_content">
-    <div class="container">
-        <span id="footer-line">Copyright © 2006 <a href="#">Ecola</a></span>
+    <div class="footer-bottom-content">
+        <div class="container">
+            <span id="footer-line">Copyright © 2006 <a href="#">Ecola</a></span>
+        </div>
     </div>
 </div>
 <script>

@@ -1,13 +1,11 @@
-/*
+html, body {
+    height: 100%;
+/ / позволит растянуть сайт на 100 % высоты
+}
 
-Urbanic Template
-
-http://www.templatemo.com/tm-395-urbanic
-
-*/
-
-body, html {
-    overflow-x: hidden;
+.wrapper {
+    min-height: 100%;
+    height: auto;
 }
 
 body {
@@ -432,16 +430,15 @@ h1, h2, h3, h4, h5, h6, span, p {
     margin-bottom: 20px;
 }
 
-.footer_bottom_content {
-    margin: auto;
-    /* margin-bottom: 30px; */
+.footer-bottom-content {
     font-size: 14px;
     color: #2b2a29;
     background: #fce67b;
     text-align: center;
-    /* margin: 15px; */
     padding: 10px;
     border-top: 1px solid #eeeeee;
+    height: 50px;
+    margin: 0 auto;
 }
 
 .social-icon-fb {
@@ -738,7 +735,8 @@ ul.templatemo-project-gallery li a img:hover {
     background: #ff7600;
     /*background: radial-gradient(rgba(241,231,103,1) 0%, rgba(254,182,69,1) 100%);*/
 }
-.menu-fist a:after:hover{
+
+.menu-fist a:after:hover {
     background: #0f0f0f;
 }
 
@@ -1024,7 +1022,8 @@ h2.flag:before {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-.text-slider-right:hover{
+
+.text-slider-right:hover {
     box-shadow: 0 2px 20px rgba(34, 30, 31, 0.4);
 
 }
@@ -1341,20 +1340,24 @@ h2.flag:before {
     z-index: 9;
     position: relative;
 }
-.single-item-image img{
+
+.single-item-image img {
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;
 }
-#catalog-img:hover{
-    -webkit-transform:rotate(15deg);
+
+#catalog-img:hover {
+    -webkit-transform: rotate(15deg);
 
 }
-#idea{
+
+#idea {
     -webkit-transition: all 0.8s ease 0s;
     transition: all 0.8s ease 0s;
 
 }
-#idea:hover{
+
+#idea:hover {
 
 }
 
@@ -1367,4 +1370,5 @@ h2.flag:before {
 #footer-line {
     font-weight: 600;
 }
+
 }
